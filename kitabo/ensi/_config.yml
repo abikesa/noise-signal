@@ -8,7 +8,7 @@
 title                       : Noise-Signal # The title of the book. Will be placed in the left navbar.
 author                      :  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
-logo                        : https://trackstarthedj.bandcamp.com/album/out-of-the-darkness-the-best-of-organized-noize # Path to the logo image file
+logo                        : https://f4.bcbits.com/img/a2524279282_16.jpg # Path to the logo image file
 email                       : "abikesa.sh@gmail.com"
 exclude_patterns            : ["LICENSE.md"]  # Patterns to skip when building the book. Can be glob-style (for example "*skip.ipynb")
 
