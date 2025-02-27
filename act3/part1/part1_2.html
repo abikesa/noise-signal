@@ -407,6 +407,90 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="revolution">
 <span id="id1"></span><h1>Revolution<a class="headerlink" href="#revolution" title="Permalink to this heading">#</a></h1>
+<style>
+  /* Apply styles only to elements with the custom class */
+  .custom-details summary {
+    list-style: none;  /* Remove default dropdown triangle */
+    cursor: pointer;
+    font-weight: normal; /* Normal text weight */
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black; /* Dotted circle */
+    border-radius: 20px; /* Make it rounded */
+    text-align: center;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .custom-details summary:hover {
+    color: lightgray; /* Change text color on hover */
+  }
+
+  .custom-details summary::-webkit-details-marker {
+    display: none; /* Remove marker in WebKit (Chrome, Safari) */
+  }
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+  <blockquote style="border-left: 4px solid #ccc; padding-left: 10px; color: #555;">
+     <em>
+      <ul>
+        <li>What makes for a suitable problem for AI (Demis Hassabis, Nobel Lecture)?
+          <ul>
+            <li>Space: Massive combinatorial search space</li>
+            <li>Function: Clear objective function (metric) to optimize against</li>
+            <li>Time: Either lots of data and/or an accurate and efficient simulator</li>
+          </ul>
+        </li>
+        <li>Guess what else fits the bill (Yours truly, amateur philosopher)?
+          <ul>
+            <li><strong>Space</strong>
+              <ol>
+                <li>Intestines/villi</li>
+                <li>Lungs/bronchioles</li>
+                <li>Capillary trees</li>
+                <li>Network of lymphatics</li>
+                <li>Dendrites in neurons</li>
+                <li>Tree branches</li>
+              </ol>
+            </li>
+            <li><strong>Function</strong>
+              <ol>
+                <li>Energy</li>
+                <li>Aerobic respiration</li>
+                <li>Delivery to "last mile" (minimize distance)</li>
+                <li>Response time (minimize)</li>
+                <li>Information</li>
+                <li>Exposure to sunlight for photosynthesis</li>
+              </ol>
+            </li>
+            <li><strong>Time</strong>
+              <ol>
+                <li>Nourishment</li>
+                <li>Gaseous exchange</li>
+                <li>Oxygen & Nutrients (Carbon dioxide & "Waste")</li>
+                <li>Surveillance for antigens</li>
+                <li>Coherence of functions</li>
+                <li>Water and nutrients from soil</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     </em>
+  </blockquote>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
+<p></p>
+<p></p>
 <p>Intelligence, whether artificial, human, or biological, is best understood as an optimization process operating within a massive combinatorial space, guided by clear objectives, and tempered by constraints of time and efficiency. Demis Hassabis’ Nobel lecture succinctly captures the three essential pillars of a problem suitable for artificial intelligence: an expansive search space, a well-defined function to optimize, and either a wealth of data or a highly efficient simulator. But these criteria do not belong to AI alone; they are, in fact, the fundamental principles of intelligence wherever it arises.</p>
 <div style="display: flex; justify-content: center;">
     <iframe width="70%" height="350px" src="https://www.youtube.com/embed/qhpGavtuu8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -425,49 +509,7 @@ document.write(`
 </div>
 <p>Time further refines intelligence, shaping both natural and artificial systems. The capacity to simulate—either through iterative learning in AI or through evolutionary trial and error in nature—defines the resilience of an intelligent entity. Nourishment, gaseous exchange, antigen surveillance, and cellular repair are time-sensitive functions that demand constant reoptimization, much like AI’s reliance on real-time data for continuous improvement. Biological intelligence is the original reinforcement learning system, where adaptation occurs not through explicit programming but through survival pressures. AI, by contrast, fast-tracks this process, compressing thousands of iterations into a fraction of the time required for biological evolution. Yet, even with this advantage, AI is still catching up to nature’s staggering efficiency in energy use, resource allocation, and self-repair.</p>
 <p>In the end, intelligence—whether biological, human, or artificial—is a question of structured exploration within constraints. The same forces that govern AI’s learning paradigms also dictate how life organizes itself. The emergence of structured, self-optimizing systems, from neuron networks to planetary ecosystems, suggests that intelligence is not a unique trait of AI or humanity but rather an emergent property of any system designed to navigate complexity. The distinction between artificial and natural intelligence may ultimately prove artificial itself; all intelligence, at its core, is a process of constrained optimization operating within a vast and evolving search space.</p>
-<details>
-    <summary></summary>
-- What makes for a suitable problem for AI (Demis Hassabis, Nobel Lecture)?
-   - Space: Massive combinatorial search space
-   - Function: Clear objective function (metric) to optimize against
-   - Time: Either lots of data and/or an accurate and efficient simulator
-<ul class="simple">
-<li><p>Guess what else fits the bill (Yours truly, amateur philosopher)?</p>
-<ul>
-<li><p>Space</p>
-<ol class="arabic simple">
-<li><p>Intestines/villi</p></li>
-<li><p>Lungs/bronchioles</p></li>
-<li><p>Capillary trees</p></li>
-<li><p>Network of lymphatics</p></li>
-<li><p>Dendrites in neurones</p></li>
-<li><p>Tree branches</p></li>
-</ol>
-</li>
-<li><p>Function</p>
-<ol class="arabic simple">
-<li><p>Energy</p></li>
-<li><p>Aerobic respiration</p></li>
-<li><p>Delivery to “last mile” (minimize distance)</p></li>
-<li><p>Response time (minimize)</p></li>
-<li><p>Information</p></li>
-<li><p>Exposure to sunlight for photosynthetisis</p></li>
-</ol>
-</li>
-<li><p>Time</p>
-<ol class="arabic simple">
-<li><p>Nourishment</p></li>
-<li><p>Gaseous exchange</p></li>
-<li><p>Oxygen &amp; Nutrients (Carbondioxide &amp; “Waste”)</p></li>
-<li><p>Surveillance for antigens</p></li>
-<li><p>Coherence of functions</p></li>
-<li><p>Water and nutrients from soil</p></li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-</details><div class="cell tag_hide-input docutils container">
+<div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
